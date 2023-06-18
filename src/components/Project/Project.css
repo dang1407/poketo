@@ -1,0 +1,235 @@
+:root {
+      --color-select-height: 56px;
+}
+
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+.project-container {
+      display:  flex;
+}
+
+.image-box {
+      width: 50%;
+      flex-grow: 1;
+      /* overflow-y: scroll; */
+      position: relative;
+}
+
+.image-box img {
+      width: 100%;
+}
+
+.dot-container {
+
+}
+
+.dot {
+      background-color: #000;
+      border-radius: 100px;
+      width: 20px;
+      height: 20px;
+      margin-left: 300px;
+}
+
+.change-image-container {
+      width: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      position: absolute;
+      right: 0;
+      top: 20%;
+}
+
+.desc-container {
+      width: 50%;
+      padding: 100px 65px;
+      color: #565656;
+}
+
+.main-head {
+      font-family: Montserrat, sans-serif;
+      padding-bottom: 35px;
+}
+
+.color-boxs {
+      padding-top: 40px;
+      padding-left: 30px;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+}
+
+.color-box {
+      display: flex;
+      margin-left: 40px;
+}
+
+.color-box #color-select {
+      width: 0px;
+      width: 150px;
+      height: var(--color-select-height);
+      line-height: var(--color-select-height);
+      padding: 0 20px;
+      /* background-color: #ededed; */
+      font-family: Montserrat, sans-serif;
+      cursor: pointer;
+      appearance: none;
+      background: transparent;
+      text-indent: -9999px;
+      z-index: 4;
+}
+
+.color-box .color-content {
+      width: 150px;
+      height: 100%;
+      margin-left: -150px;
+      z-index: 3;
+      /* border: 1px solid #bbb; */
+      display: flex;
+      justify-content: space-around;
+      background-color: #bbb;
+      align-items: center;
+}
+
+.color-content span {
+      display: inline-block;
+      height: var(--color-select-height);
+      line-height: var(--color-select-height);
+}
+
+/* Card box */
+.card-box {
+      display: flex;
+      --card-box-height: 55px;
+      margin-top: 65px;
+}
+
+.card-box .quantity {
+      width: 55px;
+      height: var(--card-box-height);
+      background-color: #e7e7e7;
+      line-height: var(--card-box-height);
+      text-align: center;
+      margin-right: 15px;
+}
+
+.card-box .add-card {
+      height: var(--card-box-height);
+      line-height: var(--card-box-height);
+      background-color: #565656;
+      color: #fff;
+      padding: 0 20px;
+  
+}
+
+.card-box svg {
+      line-height: var(--card-box-height);
+      display: inline-block;
+      height: var(--card-box-height);
+      margin-left: 20px;
+}
+
+.card-box .add-card:hover {
+      background: #1990c6 !important;
+      color: white !important;
+}
+
+.desc-box {
+      margin-top: 65px;
+}
+
+.details {
+      margin-top: 65px;
+}
+
+.cus-review {
+      border: 1px solid #ccc;
+      padding: 24px;
+      margin-top: 65px;
+}
+
+.cus-review h1 {
+      margin-bottom: 50px;
+}
+
+
+.title-box {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+}
+
+.title-box h1 {
+      margin: 100px 0;
+      text-align: center;
+      font-size: 4vw;
+      width: 40%;
+      color: #565656;
+      position: relative;
+}
+
+.title-border {
+      position: absolute;
+      bottom: -100px;
+      width: 60px;
+      left: 20px;
+      height: 5px;
+      background-color: #000;
+}
+
+.product-container {
+      width: 50%;
+}
+
+.product-box {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      margin-bottom: 20px;
+}
+.product-box img {
+      width: 70%;
+      overflow: hidden;
+}
+
+.product-box h1 {
+      font-size: 16px;
+      text-align: center;
+      color: #565656 
+}
+
+/* #image-product1:hover {
+      content: calc(150%);
+      display: inline-block;
+} */
+
+#image-product2:hover {
+      content: url("https://cdn.shopify.com/s/files/1/0001/5211/products/Object-Notebook-Inside-Lavender-002_1082dbe9-cd9f-49f4-a490-5617df80c499_480x.jpg?v=1672867360");
+}
+
+/* #image-product4:hover {
+      content: url("https://cdn.shopify.com/s/files/1/0001/5211/products/Everyday-Desk-Pad-Stop-Motion-01_480x.gif?v=1651186991");
+} */
+
+.product-box .sale {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 0.8125rem;
+      line-height: 1;
+      padding: 17px 23px 16px;
+      background: #e7e7e7;
+      text-transform: uppercase;
+      font-weight: bold;
+      z-index: 99;
+      color: #565656 !important
+}
